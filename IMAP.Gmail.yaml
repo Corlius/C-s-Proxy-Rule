@@ -1,0 +1,6 @@
+# NAME: IMAP.Gmail
+# AUTHOR: Corlius
+payload:
+  - DOMAIN,imap.gmail.com
+  - DOMAIN,pop.gmail.com
+  - DOMAIN,smtp.gmail.com
