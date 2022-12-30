@@ -9,12 +9,12 @@ subscribe-url: https://update.glados-config.com/clash/181971/8944d73/55476/glado
 proxy-providers:
   All:
     type: http
-    url: "https://api.v1.mk/sub?target=clash&url=https://update.glados-config.com/clash/181971/8944d73/55476/glados.yaml&list=true&udp=true"
+    url: "https://api.v1.mk/sub?target=clash&url=https://update.glados-config.com/clash/256267/cf56fab/172051/glados.yaml&list=true&udp=true"
     interval: 3600
     path: ./proxy/all.yaml
   NFX:
     type: http
-    url: "https://api.v1.mk/sub?target=clash&url=https://update.glados-config.com/clash/181971/8944d73/55476/glados.yaml&list=true&udp=true"
+    url: "https://api.v1.mk/sub?target=clash&url=https://update.glados-config.com/clash/256267/cf56fab/172051/glados.yaml&list=true&udp=true"
     interval: 86400
     path: ./proxy/nfx.yaml
     filter: Portalgun|Netflix
