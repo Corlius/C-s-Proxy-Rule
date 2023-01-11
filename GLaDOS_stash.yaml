@@ -17,7 +17,7 @@ proxy-providers:
     url: "https://api.v1.mk/sub?target=clash&url=https://update.glados-config.com/clash/256267/cf56fab/172051/glados.yaml&list=true&udp=true"
     interval: 86400
     path: ./proxy/nfx.yaml
-    filter: Portalgun|Netflix
+    filter: Netflix
 #--------------------------------------------------
 proxy-groups:
 - name: Proxy
@@ -78,7 +78,8 @@ proxy-groups:
   use:
     - All
   url: "http://www.gstatic.com/generate_204"
-  interval: 300
+  interval: 600
+  tolerance: 100
 - name: YouTube Auto
   type: url-test
   icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/YouTube.png
@@ -86,6 +87,7 @@ proxy-groups:
     - All
   url: "http://www.youtube.com/"
   interval: 86400
+  tolerance: 100
 - name: NETFLIX Auto
   type: url-test
   icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Netflix.png
@@ -93,46 +95,47 @@ proxy-groups:
     - NFX
   url: "http://www.netflix.com/"
   interval: 86400
+  tolerance: 100
 #region--------------------------------------------------
 - name: HK
   filter: "HK"
   icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Hong_Kong.png
-  interval: 120
+  interval: 600
   type: url-test
   url: http://cp.cloudflare.com/generate_204
   include-all: true
 - name: JP
   filter: "JP"
   icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Japan.png
-  interval: 120
+  interval: 600
   type: url-test
   url: http://cp.cloudflare.com/generate_204
   include-all: true
 - name: TW
   filter: "TW"
   icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Taiwan.png
-  interval: 120
+  interval: 600
   type: url-test
   url: http://cp.cloudflare.com/generate_204
   include-all: true
 - name: SG
   filter: "SG"
   icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Singapore.png
-  interval: 120
+  interval: 600
   type: url-test
   url: http://cp.cloudflare.com/generate_204
   include-all: true
 - name: US
   filter: "US"
   icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/United_States.png
-  interval: 120
+  interval: 600
   type: url-test
   url: http://cp.cloudflare.com/generate_204
   include-all: true
 - name: UK
   filter: "UK"
   icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/United_Kingdom.png
-  interval: 120
+  interval: 600
   type: url-test
   url: http://cp.cloudflare.com/generate_204
   include-all: true

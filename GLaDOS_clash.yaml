@@ -12,10 +12,6 @@ proxy-providers:
     url: "https://api.v1.mk/sub?target=clash&url=https://update.glados-config.com/clash/256267/cf56fab/172051/glados.yaml&list=true&udp=true"
     interval: 3600
     path: ./proxy/all.yaml
-    health-check:
-      enable: true
-      interval: 600
-      url: http://www.gstatic.com/generate_204
   US:
     type: file
     path: ./proxy/all.yaml
@@ -92,50 +88,53 @@ proxy-groups:
   use:
     - All
   url: "http://www.gstatic.com/generate_204"
-  interval: 300
+  interval: 600
+  tolerance: 100
 - name: YouTube Auto
   type: url-test
   use:
     - All
   url: "http://www.youtube.com/"
   interval: 86400
+  tolerance: 100
 - name: NETFLIX Auto
   type: url-test
   use:
     - NFX
   url: "http://www.netflix.com/"
   interval: 86400
+  tolerance: 100
 #region--------------------------------------------------
 - name: HK
   type: url-test
   use:
     - HK
   url: "http://www.gstatic.com/generate_204"
-  interval: 300
+  interval: 600
 - name: JP
   type: url-test
   use:
     - JP
   url: "http://www.gstatic.com/generate_204"
-  interval: 300
+  interval: 600
 - name: TW
   type: url-test
   use:
     - TW
   url: "https://ani.gamer.com.tw/"
-  interval: 300
+  interval: 600
 - name: SG
   type: url-test
   use:
     - SG
   url: "http://www.gstatic.com/generate_204"
-  interval: 300
+  interval: 600
 - name: US
   type: url-test
   use:
     - US
   url: "http://www.gstatic.com/generate_204"
-  interval: 300
+  interval: 600
 #--------------------------------------------------
 rule-providers:
   DIRECT:
