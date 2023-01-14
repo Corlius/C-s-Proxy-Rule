@@ -1,0 +1,10 @@
+# NAME: HK
+# AUTHOR: Corlius
+payload:
+  #包子漫画
+  - DOMAIN-SUFFIX,baozimh.com,HK
+  - DOMAIN-SUFFIX,webmota.com,HK
+  #appstorrent
+  - DOMAIN-SUFFIX,appstorrent.ru,HK
+  - DOMAIN-SUFFIX,vk.com,HK
+  - DOMAIN-SUFFIX,userapi.com,HK
