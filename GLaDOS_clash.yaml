@@ -22,40 +22,57 @@ proxy-providers:
     interval: 3600
     path: ./proxy/all.yaml
   Auto:
-    type: file
+    type: http
+    url: "https://api.v1.mk/sub?target=clash&url=https://update.glados-config.com/clash/256267/cf56fab/172051/glados.yaml&list=true&udp=true"
+    interval: 3600
     path: ./proxy/all.yaml
     filter: B1|S1|H2|Portalgun|D1|D2
   NFX:
-    type: file
+    type: http
+    url: "https://api.v1.mk/sub?target=clash&url=https://update.glados-config.com/clash/256267/cf56fab/172051/glados.yaml&list=true&udp=true"
+    interval: 3600
     path: ./proxy/all.yaml
     filter: Netflix
   HK:
-    type: file
+    type: http
+    url: "https://api.v1.mk/sub?target=clash&url=https://update.glados-config.com/clash/256267/cf56fab/172051/glados.yaml&list=true&udp=true"
+    interval: 3600
     path: ./proxy/all.yaml
     filter: HK
   TW:
-    type: file
+    type: http
+    url: "https://api.v1.mk/sub?target=clash&url=https://update.glados-config.com/clash/256267/cf56fab/172051/glados.yaml&list=true&udp=true"
+    interval: 3600
     path: ./proxy/all.yaml
     filter: TW
   SG:
-    type: file
+    type: http
+    url: "https://api.v1.mk/sub?target=clash&url=https://update.glados-config.com/clash/256267/cf56fab/172051/glados.yaml&list=true&udp=true"
+    interval: 3600
     path: ./proxy/all.yaml
     filter: SG
   JP:
-    type: file
+    type: http
+    url: "https://api.v1.mk/sub?target=clash&url=https://update.glados-config.com/clash/256267/cf56fab/172051/glados.yaml&list=true&udp=true"
+    interval: 3600
     path: ./proxy/all.yaml
     filter: JP
   US:
-    type: file
+    type: http
+    url: "https://api.v1.mk/sub?target=clash&url=https://update.glados-config.com/clash/256267/cf56fab/172051/glados.yaml&list=true&udp=true"
+    interval: 3600
     path: ./proxy/all.yaml
     filter: US
   UK:
-    type: file
+    type: http
+    url: "https://api.v1.mk/sub?target=clash&url=https://update.glados-config.com/clash/256267/cf56fab/172051/glados.yaml&list=true&udp=true"
+    interval: 3600
     path: ./proxy/all.yaml
     filter: UK
 #--------------------------------------------------
 proxy-groups:
   - name: Proxy
+    icon: "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Proxy.png"
     type: select
     proxies:
       - Proxy Auto
@@ -68,6 +85,7 @@ proxy-groups:
     use:
       - All
   - name: YouTube
+    icon: "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/YouTube.png"
     type: select
     proxies:
       - YouTube Auto
@@ -78,16 +96,19 @@ proxy-groups:
       - US
       - UK
   - name: NETFLIX
+    icon: "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Netflix.png"
     type: select
     use:
       - NFX
   - name: Bilibili
+    icon: "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/bilibili_3.png"
     type: select
     proxies:
       - DIRECT
       - HK
       - TW
   - name: IMAP.Gmail
+    icon: "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Mail.png"
     type: select
     proxies:
       - HK
@@ -97,24 +118,28 @@ proxy-groups:
       - US
       - UK
   - name: AdBlock
+    icon: "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Advertising.png"
     type: select
     proxies:
       - REJECT
       - DIRECT
   - name: FallBack
+    icon: "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Final.png"
     type: select
     proxies:
       - Proxy
       - DIRECT
 #auto--------------------------------------------------
   - name: Proxy Auto
+    icon: "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Proxy.png"
+    type: url-test
     url: "http://www.gstatic.com/generate_204"
     interval: 600
     tolerance: 100
-    type: url-test
     use:
       - Auto
   - name: YouTube Auto
+    icon: "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/YouTube.png"
     type: url-test
     url: "http://www.gstatic.com/generate_204"
     interval: 86400
@@ -123,36 +148,42 @@ proxy-groups:
       - Auto
 #region--------------------------------------------------
   - name: HK
+    icon: "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Hong_Kong.png"
     type: url-test
     url: "http://www.gstatic.com/generate_204"
     interval: 600
     use:
       - HK
   - name: TW
+    icon: "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Taiwan.png"
     type: url-test
     url: "http://www.gstatic.com/generate_204"
     interval: 600
     use:
       - TW
   - name: SG
+    icon: "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Singapore.png"
     type: url-test
     url: "http://www.gstatic.com/generate_204"
     interval: 600
     use:
       - SG
   - name: JP
+    icon: "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Japan.png"
     type: url-test
     url: "http://www.gstatic.com/generate_204"
     interval: 600
     use:
       - JP
   - name: US
+    icon: "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/United_States.png"
     type: url-test
     url: "http://www.gstatic.com/generate_204"
     interval: 600
     use:
       - US
   - name: UK
+    icon: "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/United_Kingdom.png"
     type: url-test
     url: "http://www.gstatic.com/generate_204"
     interval: 600
