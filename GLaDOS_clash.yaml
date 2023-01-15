@@ -4,71 +4,89 @@ mode: rule
 log-level: info
 external-controller: 127.0.0.1:9090
 subscribe-url: https://update.glados-config.com/clash/181971/8944d73/55476/glados.yaml
-dns:
-  enable: true
-  listen: 127.0.0.1:53
-  nameserver:
-     - 119.29.29.29
-     - 114.114.114.114
-  fallback:
-     - https://1.1.1.1/dns-query
-     - tls://1.0.0.1:853
-     - tls://dns.google:853
 #--------------------------------------------------
 proxy-providers:
   All:
     type: http
     url: "https://api.v1.mk/sub?target=clash&url=https://update.glados-config.com/clash/256267/cf56fab/172051/glados.yaml&list=true&udp=true"
-    interval: 3600
+    interval: 86400
     path: ./proxy/all.yaml
+    health-check:
+      enable: true
+      interval: 600
+      url: "http://www.gstatic.com/generate_204"
   Auto:
     type: http
     url: "https://api.v1.mk/sub?target=clash&url=https://update.glados-config.com/clash/256267/cf56fab/172051/glados.yaml&list=true&udp=true"
-    interval: 3600
     path: ./proxy/all.yaml
     filter: B1|S1|H2|Portalgun|D1|D2
+    health-check:
+      enable: true
+      interval: 600
+      url: "http://www.gstatic.com/generate_204"
   NFX:
     type: http
     url: "https://api.v1.mk/sub?target=clash&url=https://update.glados-config.com/clash/256267/cf56fab/172051/glados.yaml&list=true&udp=true"
-    interval: 3600
     path: ./proxy/all.yaml
     filter: Netflix
+    health-check:
+      enable: true
+      interval: 600
+      url: "http://www.gstatic.com/generate_204"
   HK:
     type: http
     url: "https://api.v1.mk/sub?target=clash&url=https://update.glados-config.com/clash/256267/cf56fab/172051/glados.yaml&list=true&udp=true"
-    interval: 3600
     path: ./proxy/all.yaml
     filter: HK
+    health-check:
+      enable: true
+      interval: 600
+      url: "http://www.gstatic.com/generate_204"
   TW:
     type: http
     url: "https://api.v1.mk/sub?target=clash&url=https://update.glados-config.com/clash/256267/cf56fab/172051/glados.yaml&list=true&udp=true"
-    interval: 3600
     path: ./proxy/all.yaml
     filter: TW
+    health-check:
+      enable: true
+      interval: 600
+      url: "http://www.gstatic.com/generate_204"
   SG:
     type: http
     url: "https://api.v1.mk/sub?target=clash&url=https://update.glados-config.com/clash/256267/cf56fab/172051/glados.yaml&list=true&udp=true"
-    interval: 3600
     path: ./proxy/all.yaml
     filter: SG
+    health-check:
+      enable: true
+      interval: 600
+      url: "http://www.gstatic.com/generate_204"
   JP:
     type: http
     url: "https://api.v1.mk/sub?target=clash&url=https://update.glados-config.com/clash/256267/cf56fab/172051/glados.yaml&list=true&udp=true"
-    interval: 3600
     path: ./proxy/all.yaml
     filter: JP
+    health-check:
+      enable: true
+      interval: 600
+      url: "http://www.gstatic.com/generate_204"
   US:
     type: http
     url: "https://api.v1.mk/sub?target=clash&url=https://update.glados-config.com/clash/256267/cf56fab/172051/glados.yaml&list=true&udp=true"
-    interval: 3600
     path: ./proxy/all.yaml
     filter: US
+    health-check:
+      enable: true
+      interval: 600
+      url: "http://www.gstatic.com/generate_204"
   UK:
     type: http
     url: "https://api.v1.mk/sub?target=clash&url=https://update.glados-config.com/clash/256267/cf56fab/172051/glados.yaml&list=true&udp=true"
-    interval: 3600
     path: ./proxy/all.yaml
     filter: UK
+    health-check:
+      enable: true
+      interval: 600
+      url: "http://www.gstatic.com/generate_204"
 #--------------------------------------------------
 proxy-groups:
   - name: Proxy
@@ -129,7 +147,7 @@ proxy-groups:
     proxies:
       - Proxy
       - DIRECT
-#auto--------------------------------------------------
+  #auto--------------------------------------------------
   - name: Proxy Auto
     icon: "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Proxy.png"
     type: url-test
@@ -146,7 +164,7 @@ proxy-groups:
     tolerance: 100
     use:
       - Auto
-#region--------------------------------------------------
+  #region--------------------------------------------------
   - name: HK
     icon: "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Hong_Kong.png"
     type: url-test
