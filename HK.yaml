@@ -8,3 +8,5 @@ payload:
   - DOMAIN-SUFFIX,appstorrent.ru,HK
   - DOMAIN-SUFFIX,vk.com,HK
   - DOMAIN-SUFFIX,userapi.com,HK
+  #iMazing
+  - DOMAIN-SUFFIX,imazing.com,HK
