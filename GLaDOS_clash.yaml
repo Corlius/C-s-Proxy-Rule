@@ -310,7 +310,7 @@ rule-providers:
     type: http
     behavior: classical
     url: "https://ghproxy.com/https://raw.githubusercontent.com/Corlius/C-s-Proxy-Rule/main/HK.yaml"
-    path: ./ruleset/CsDirect.yaml
+    path: ./ruleset/CsHK.yaml
     interval: 86400
   CsIMAP:
     type: http
