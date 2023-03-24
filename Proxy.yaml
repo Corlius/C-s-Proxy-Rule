@@ -1,0 +1,12 @@
+# NAME: Proxy
+# AUTHOR: Corlius
+payload:
+  #包子漫画
+  - DOMAIN-SUFFIX,baozimh.com,Proxy
+  - DOMAIN-SUFFIX,webmota.com,Proxy
+  #appstorrent
+  - DOMAIN-SUFFIX,appstorrent.ru,Proxy
+  - DOMAIN-SUFFIX,vk.com,Proxy
+  - DOMAIN-SUFFIX,userapi.com,Proxy
+  #iMazing
+  - DOMAIN-SUFFIX,imazing.com,Proxy

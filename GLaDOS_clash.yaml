@@ -306,11 +306,11 @@ rule-providers:
     url: "https://ghproxy.com/https://raw.githubusercontent.com/Corlius/C-s-Proxy-Rule/main/Direct.yaml"
     path: ./ruleset/CsDirect.yaml
     interval: 86400
-  CsHK:
+  CsProxy:
     type: http
     behavior: classical
-    url: "https://ghproxy.com/https://raw.githubusercontent.com/Corlius/C-s-Proxy-Rule/main/HK.yaml"
-    path: ./ruleset/CsHK.yaml
+    url: "https://ghproxy.com/https://raw.githubusercontent.com/Corlius/C-s-Proxy-Rule/main/Proxy.yaml"
+    path: ./ruleset/CsProxy.yaml
     interval: 86400
   CsIMAP:
     type: http
@@ -324,7 +324,7 @@ rules:
 - DOMAIN-SUFFIX,openai.com,US
 #以下为自定义规则组
 - RULE-SET,CsDirect,DIRECT
-- RULE-SET,CsHK,HK
+- RULE-SET,CsProxy,Proxy
 - RULE-SET,CsIMAP,IMAP.Gmail
 #以下为规则组
 - RULE-SET,DIRECT,DIRECT
