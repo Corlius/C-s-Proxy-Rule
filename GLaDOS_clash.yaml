@@ -7,12 +7,12 @@ subscribe-url: https://update.glados-config.com/clash/181971/8944d73/55476/glado
 #--------------------------------------------------
 proxies:
 - flow: xtls-rprx-direct
-  name: RackNerd VLESS
+  name: RackNerd VPS
   password:
   port: 443
   server: vps.corlius.top
   type: vless
-  uuid: 23ce1849-e29f-47a6-de2b-522b4e07bf56
+  uuid: ebf89d9e-9431-44e6-cee9-81510f4be7d4
 proxy-providers:
   All:
     type: http
