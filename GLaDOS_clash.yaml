@@ -5,6 +5,14 @@ log-level: info
 external-controller: 127.0.0.1:9090
 subscribe-url: https://update.glados-config.com/clash/181971/8944d73/55476/glados.yaml
 #--------------------------------------------------
+proxies:
+- flow: xtls-rprx-direct
+  name: RackNerd VLESS
+  password:
+  port: 443
+  server: vps.corlius.top
+  type: vless
+  uuid: 23ce1849-e29f-47a6-de2b-522b4e07bf56
 proxy-providers:
   All:
     type: http
@@ -100,6 +108,7 @@ proxy-groups:
       - JP
       - US
       - UK
+      - RackNerd VLESS
     use:
       - All
   - name: YouTube
@@ -113,6 +122,7 @@ proxy-groups:
       - JP
       - US
       - UK
+      - RackNerd VLESS
   - name: NETFLIX
     icon: "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Netflix.png"
     type: select
@@ -135,6 +145,7 @@ proxy-groups:
       - JP
       - US
       - UK
+      - RackNerd VLESS
   - name: AdBlock
     icon: "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Advertising.png"
     type: select
@@ -156,6 +167,8 @@ proxy-groups:
     tolerance: 100
     use:
       - Auto
+    proxies:
+      - RackNerd VLESS
   - name: YouTube Auto
     icon: "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/YouTube.png"
     type: url-test
