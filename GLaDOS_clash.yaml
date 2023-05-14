@@ -11,7 +11,7 @@ proxies:
   password:
   port: 443
   server: vps.corlius.top
-  type: VPS
+  type: VLESS
   uuid: ebf89d9e-9431-44e6-cee9-81510f4be7d4
 proxy-providers:
   All:
