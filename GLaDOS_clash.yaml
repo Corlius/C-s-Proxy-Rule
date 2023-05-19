@@ -41,6 +41,15 @@ proxy-providers:
       enable: true
       interval: 600
       url: "http://www.gstatic.com/generate_204"
+  AI:
+    type: http
+    url: "https://api.v1.mk/sub?target=clash&url=https://update.glados-config.com/clash/256267/cf56fab/172051/glados.yaml&list=true&udp=true"
+    path: ./proxy/all.yaml
+    filter: G1
+    health-check:
+      enable: true
+      interval: 600
+      url: "http://www.gstatic.com/generate_204"
   HK:
     type: http
     url: "https://api.v1.mk/sub?target=clash&url=https://update.glados-config.com/clash/256267/cf56fab/172051/glados.yaml&list=true&udp=true"
@@ -111,6 +120,11 @@ proxy-groups:
       - RackNerd VPS
     use:
       - All
+  - name: OpenAI
+    icon: "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Lab.png"
+    type: select
+    use:
+      - AI
   - name: YouTube
     icon: "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/YouTube.png"
     type: select
@@ -234,6 +248,12 @@ rule-providers:
     url: "https://ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/AdvertisingLite/AdvertisingLite_Domain.yaml"
     path: ./ruleset/AdDomain.yaml
     interval: 86400
+  OpenAI:
+    type: http
+    behavior: classical
+    url: "https://ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/OpenAI/OpenAI.yaml"
+    path: ./ruleset/OpenAI.yaml
+    interval: 86400
   YouTube:
     type: http
     behavior: classical
@@ -334,7 +354,6 @@ rule-providers:
 #--------------------------------------------------
 rules:
 #以下为自定义规则
-- DOMAIN-SUFFIX,openai.com,US
 #以下为自定义规则组
 - RULE-SET,CsDirect,DIRECT
 - RULE-SET,CsProxy,Proxy
@@ -342,6 +361,7 @@ rules:
 #以下为规则组
 - RULE-SET,DIRECT,DIRECT
 - RULE-SET,Adblock-Domain,AdBlock
+- RULE-SET,OpenAI,OpenAI
 - RULE-SET,YouTube,YouTube
 - RULE-SET,Netflix,NETFLIX
 - RULE-SET,Bahamut,TW
