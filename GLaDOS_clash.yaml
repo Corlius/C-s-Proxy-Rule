@@ -125,6 +125,8 @@ proxy-groups:
     type: select
     use:
       - AI
+    proxies:
+      - RackNerd VPS
   - name: YouTube
     icon: "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/YouTube.png"
     type: select
