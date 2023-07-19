@@ -356,7 +356,7 @@ rule-providers:
 #--------------------------------------------------
 rules:
 #以下为自定义规则
-- DOMAIN,claude.ai,US
+- DOMAIN-SUFFIX,claude.ai,US
 #以下为自定义规则组
 - RULE-SET,CsDirect,DIRECT
 - RULE-SET,CsProxy,Proxy
