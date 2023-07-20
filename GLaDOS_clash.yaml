@@ -127,6 +127,13 @@ proxy-groups:
       - AI
     proxies:
       - RackNerd VPS
+  - name: Claude AI
+    icon: "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Lab.png"
+    type: select
+    use:
+      - US
+    proxies:
+      - RackNerd VPS
   - name: YouTube
     icon: "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/YouTube.png"
     type: select
@@ -356,7 +363,7 @@ rule-providers:
 #--------------------------------------------------
 rules:
 #以下为自定义规则
-- DOMAIN-SUFFIX,claude.ai,US
+- DOMAIN-SUFFIX,claude.ai,Claude AI
 #以下为自定义规则组
 - RULE-SET,CsDirect,DIRECT
 - RULE-SET,CsProxy,Proxy
