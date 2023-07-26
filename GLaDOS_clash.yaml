@@ -3,7 +3,7 @@ allow-lan: true
 mode: rule
 log-level: info
 external-controller: 127.0.0.1:9090
-subscribe-url: https://update.glados-config.com/clash/181971/8944d73/55476/glados.yaml
+subscribe-url:  https://update.glados-config.com/clash/256267/cf56fab/172051/glados.yaml
 #--------------------------------------------------
 proxies:
 - flow: xtls-rprx-direct
