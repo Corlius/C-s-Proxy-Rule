@@ -127,6 +127,13 @@ proxy-groups:
       - AI
     proxies:
       - RackNerd VPS
+      - Proxy Auto
+      - HK
+      - TW
+      - SG
+      - JP
+      - US
+      - UK
   - name: Claude AI
     icon: "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Lab.png"
     type: select
