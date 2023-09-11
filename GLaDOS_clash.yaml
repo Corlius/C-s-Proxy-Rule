@@ -6,13 +6,11 @@ external-controller: 127.0.0.1:9090
 subscribe-url:  	https://www.glados-config.com/clash/256267/cf56fab/172051/glados.yaml
 #--------------------------------------------------
 proxies:
-- flow: xtls-rprx-direct
-  name: RackNerd VPS
-  password:
-  port: 443
+- name: RackNerd VPS
+  password: HIv0gq15Pk
+  port: 46254
   server: vps.corlius.top
-  type: vless
-  uuid: ebf89d9e-9431-44e6-cee9-81510f4be7d4
+  type: trojan
 proxy-providers:
   All:
     type: http
