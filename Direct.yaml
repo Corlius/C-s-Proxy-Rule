@@ -22,3 +22,5 @@ payload:
   #VPS
   - DOMAIN-SUFFIX,vps.corlius.top
   - IP-CIDR,204.15.77.254/32
+  #FireFox
+  - DOMAIN-SUFFIX,addons.mozilla.org
