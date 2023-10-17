@@ -39,15 +39,6 @@ proxy-providers:
       enable: true
       interval: 600
       url: "http://www.gstatic.com/generate_204"
-  AI:
-    type: http
-    url: "https://api.v1.mk/sub?target=clash&url=https://www.glados-config.com/clash/256267/cf56fab/172051/glados.yaml&list=true&udp=true"
-    path: ./proxy/all.yaml
-    filter: G1|TW-01|TW-02|TW-03
-    health-check:
-      enable: true
-      interval: 600
-      url: "http://www.gstatic.com/generate_204"
   HK:
     type: http
     url: "https://api.v1.mk/sub?target=clash&url=https://www.glados-config.com/clash/256267/cf56fab/172051/glados.yaml&list=true&udp=true"
@@ -118,11 +109,9 @@ proxy-groups:
       - RackNerd VPS
     use:
       - All
-  - name: OpenAI
+  - name: AIGC
     icon: "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Lab.png"
     type: select
-    use:
-      - AI
     proxies:
       - RackNerd VPS
       - Proxy Auto
@@ -132,13 +121,6 @@ proxy-groups:
       - JP
       - US
       - UK
-  - name: Claude AI
-    icon: "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Lab.png"
-    type: select
-    use:
-      - US
-    proxies:
-      - RackNerd VPS
   - name: YouTube
     icon: "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/YouTube.png"
     type: select
@@ -368,8 +350,8 @@ rule-providers:
 #--------------------------------------------------
 rules:
 #以下为自定义规则
-- DOMAIN-SUFFIX,claude.ai,Claude AI
-- DOMAIN-SUFFIX,bard.google.com,OpenAI
+- DOMAIN-SUFFIX,claude.ai,AIGC
+- DOMAIN-SUFFIX,bard.google.com,AIGC
 #以下为自定义规则组
 - RULE-SET,CsDirect,DIRECT
 - RULE-SET,CsProxy,Proxy
@@ -377,7 +359,7 @@ rules:
 #以下为规则组
 - RULE-SET,DIRECT,DIRECT
 - RULE-SET,Adblock-Domain,AdBlock
-- RULE-SET,OpenAI,OpenAI
+- RULE-SET,OpenAI,AIGC
 - RULE-SET,YouTube,YouTube
 - RULE-SET,Netflix,NETFLIX
 - RULE-SET,Bahamut,TW
