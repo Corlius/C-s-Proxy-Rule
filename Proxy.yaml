@@ -10,3 +10,5 @@ payload:
   - DOMAIN-SUFFIX,userapi.com,Proxy
   #iMazing
   - DOMAIN-SUFFIX,imazing.com,Proxy
+  #Github
+  - DOMAIN-SUFFIX,githubusercontent.com,Proxy
