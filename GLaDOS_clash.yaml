@@ -6,11 +6,24 @@ external-controller: 127.0.0.1:9090
 subscribe-url:  	https://www.glados-config.com/clash/256267/cf56fab/172051/glados.yaml
 #--------------------------------------------------
 proxies:
-- name: RackNerd VPS
-  password: HIv0gq15Pk
-  port: 46254
-  server: vps.corlius.top
-  type: trojan
+  - name: RackNerd VPS TJ
+    password: pbYR15NC8R
+    port: 31196
+    server: vps.corlius.top
+    type: trojan
+  - alterId: 0
+    cipher: chacha20-poly1305
+    flow: ""
+    name: RackNerd VPS VM
+    network: ws
+    port: 31153
+    server: vps.corlius.top
+    tls: true
+    type: vmess
+    uuid: fcdd5e5c-c202-480f-db97-2fdcc44848ea
+    ws-opts:
+      headers: {}
+      path: /wspath
 proxy-providers:
   All:
     type: http
@@ -106,14 +119,16 @@ proxy-groups:
       - JP
       - US
       - UK
-      - RackNerd VPS
+      - RackNerd VPS VM
+      - RackNerd VPS TJ
     use:
       - All
   - name: AIGC
     icon: "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Lab.png"
     type: select
     proxies:
-      - RackNerd VPS
+      - RackNerd VPS VM
+      - RackNerd VPS TJ
       - Proxy Auto
       - HK
       - TW
@@ -132,7 +147,8 @@ proxy-groups:
       - JP
       - US
       - UK
-      - RackNerd VPS
+      - RackNerd VPS VM
+      - RackNerd VPS TJ
   - name: NETFLIX
     icon: "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Netflix.png"
     type: select
@@ -155,7 +171,8 @@ proxy-groups:
       - JP
       - US
       - UK
-      - RackNerd VPS
+      - RackNerd VPS VM
+      - RackNerd VPS TJ
   - name: AdBlock
     icon: "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Advertising.png"
     type: select
@@ -178,7 +195,8 @@ proxy-groups:
     use:
       - Auto
     proxies:
-      - RackNerd VPS
+      - RackNerd VPS VM
+      - RackNerd VPS TJ
   - name: YouTube Auto
     icon: "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/YouTube.png"
     type: url-test
