@@ -177,15 +177,15 @@ proxy-groups:
     icon: "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Mail.png"
     type: select
     proxies:
+      - RackNerd VPS TJ
+      - RackNerd VPS VL
+      - RackNerd VPS VM
       - HK
       - TW
       - SG
       - JP
       - US
       - UK
-      - RackNerd VPS TJ
-      - RackNerd VPS VL
-      - RackNerd VPS VM
   - name: AdBlock
     icon: "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Advertising.png"
     type: select
