@@ -21,6 +21,6 @@ DOMAIN-SUFFIX,tmdb.org
 DOMAIN-SUFFIX,themoviedb.org
 #VPS
 DOMAIN-SUFFIX,vps.corlius.top
-IP-CIDR,204.15.77.254/32
+IP-CIDR,142.171.77.219/32
 #FireFox
 DOMAIN-SUFFIX,addons.mozilla.org
