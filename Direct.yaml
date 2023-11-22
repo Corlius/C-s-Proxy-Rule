@@ -10,7 +10,7 @@ payload:
   - DOMAIN-SUFFIX,ouo.io
   - DOMAIN-SUFFIX,craft.do
   - DOMAIN-SUFFIX,subhd.tv
-  - DOMAIN-SUFFIX,bing.com
+  - DOMAIN-SUFFIX,speech.platform.bing.com
   #WeChat
   - IP-CIDR,43.156.222.154/32
   - IP-CIDR,43.156.222.210/32
