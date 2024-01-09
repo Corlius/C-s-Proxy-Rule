@@ -36,7 +36,7 @@ proxies:
 proxy-providers:
   All:
     type: http
-    url: "https://api.v1.mk/sub?target=clash&url=https://www.glados-config.com/clash/256267/cf56fab/172051/glados.yaml&list=true&udp=true"
+    url: "https://www.nameless13.com/sub?target=clash&url=https://www.glados-config.com/clash/256267/cf56fab/172051/glados.yaml&list=true"
     interval: 86400
     path: ./proxy/all.yaml
     health-check:
@@ -45,7 +45,7 @@ proxy-providers:
       url: "http://www.gstatic.com/generate_204"
   Auto:
     type: http
-    url: "https://api.v1.mk/sub?target=clash&url=https://www.glados-config.com/clash/256267/cf56fab/172051/glados.yaml&list=true&udp=true"
+    url: "https://www.nameless13.com/sub?target=clash&url=https://www.glados-config.com/clash/256267/cf56fab/172051/glados.yaml&list=true"
     path: ./proxy/all.yaml
     filter: B1|S1|H2|Portalgun|D1|D2
     health-check:
@@ -54,7 +54,7 @@ proxy-providers:
       url: "http://www.gstatic.com/generate_204"
   NFX:
     type: http
-    url: "https://api.v1.mk/sub?target=clash&url=https://www.glados-config.com/clash/256267/cf56fab/172051/glados.yaml&list=true&udp=true"
+    url: "https://www.nameless13.com/sub?target=clash&url=https://www.glados-config.com/clash/256267/cf56fab/172051/glados.yaml&list=true"
     path: ./proxy/all.yaml
     filter: Netflix
     health-check:
@@ -63,7 +63,7 @@ proxy-providers:
       url: "http://www.gstatic.com/generate_204"
   HK:
     type: http
-    url: "https://api.v1.mk/sub?target=clash&url=https://www.glados-config.com/clash/256267/cf56fab/172051/glados.yaml&list=true&udp=true"
+    url: "https://www.nameless13.com/sub?target=clash&url=https://www.glados-config.com/clash/256267/cf56fab/172051/glados.yaml&list=true"
     path: ./proxy/all.yaml
     filter: HK
     health-check:
@@ -72,7 +72,7 @@ proxy-providers:
       url: "http://www.gstatic.com/generate_204"
   TW:
     type: http
-    url: "https://api.v1.mk/sub?target=clash&url=https://www.glados-config.com/clash/256267/cf56fab/172051/glados.yaml&list=true&udp=true"
+    url: "https://www.nameless13.com/sub?target=clash&url=https://www.glados-config.com/clash/256267/cf56fab/172051/glados.yaml&list=true"
     path: ./proxy/all.yaml
     filter: TW
     health-check:
@@ -81,7 +81,7 @@ proxy-providers:
       url: "http://www.gstatic.com/generate_204"
   SG:
     type: http
-    url: "https://api.v1.mk/sub?target=clash&url=https://www.glados-config.com/clash/256267/cf56fab/172051/glados.yaml&list=true&udp=true"
+    url: "https://www.nameless13.com/sub?target=clash&url=https://www.glados-config.com/clash/256267/cf56fab/172051/glados.yaml&list=true"
     path: ./proxy/all.yaml
     filter: SG
     health-check:
@@ -90,7 +90,7 @@ proxy-providers:
       url: "http://www.gstatic.com/generate_204"
   JP:
     type: http
-    url: "https://api.v1.mk/sub?target=clash&url=https://www.glados-config.com/clash/256267/cf56fab/172051/glados.yaml&list=true&udp=true"
+    url: "https://www.nameless13.com/sub?target=clash&url=https://www.glados-config.com/clash/256267/cf56fab/172051/glados.yaml&list=true"
     path: ./proxy/all.yaml
     filter: JP
     health-check:
@@ -99,7 +99,7 @@ proxy-providers:
       url: "http://www.gstatic.com/generate_204"
   US:
     type: http
-    url: "https://api.v1.mk/sub?target=clash&url=https://www.glados-config.com/clash/256267/cf56fab/172051/glados.yaml&list=true&udp=true"
+    url: "https://www.nameless13.com/sub?target=clash&url=https://www.glados-config.com/clash/256267/cf56fab/172051/glados.yaml&list=true"
     path: ./proxy/all.yaml
     filter: US
     health-check:
@@ -108,7 +108,7 @@ proxy-providers:
       url: "http://www.gstatic.com/generate_204"
   UK:
     type: http
-    url: "https://api.v1.mk/sub?target=clash&url=https://www.glados-config.com/clash/256267/cf56fab/172051/glados.yaml&list=true&udp=true"
+    url: "https://www.nameless13.com/sub?target=clash&url=https://www.glados-config.com/clash/256267/cf56fab/172051/glados.yaml&list=true"
     path: ./proxy/all.yaml
     filter: UK
     health-check:
