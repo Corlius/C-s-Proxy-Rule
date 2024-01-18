@@ -134,6 +134,13 @@ proxy-groups:
     use:
       - TW
       - HK
+  - name: Bahamut
+    icon: "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Bahamut.png"
+    type: select
+    proxies:
+      - TW
+    use:
+      - TW
   - name: IMAP.Gmail
     icon: "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Mail.png"
     type: select
@@ -150,6 +157,7 @@ proxy-groups:
     proxies:
       - REJECT
       - DIRECT
+      - Proxy
   - name: FallBack
     icon: "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Final.png"
     type: select
@@ -349,7 +357,7 @@ rules:
 - RULE-SET,OpenAI,AIGC
 - RULE-SET,YouTube,YouTube
 - RULE-SET,Netflix,NETFLIX
-- RULE-SET,Bahamut,TW
+- RULE-SET,Bahamut,Bahamut
 - RULE-SET,BiliBili,Bilibili
 - RULE-SET,Apple Proxy,Proxy
 - RULE-SET,Apple,DIRECT
