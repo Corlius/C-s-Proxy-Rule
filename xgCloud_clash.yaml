@@ -15,14 +15,6 @@ proxy-providers:
       enable: true
       interval: 600
       url: "http://www.gstatic.com/generate_204"
-  Auto:
-    type: http
-    url: "https://www.nameless13.com/sub?target=clash&url=https://sub1.xg-site2.xyz/api/v1/client/subscribe?token=797c887179aba7f77b8d6b5fa2673ef6&list=true"
-    path: ./proxy/all.yaml
-    health-check:
-      enable: true
-      interval: 600
-      url: "http://www.gstatic.com/generate_204"
   NFX:
     type: http
     url: "https://www.nameless13.com/sub?target=clash&url=https://sub1.xg-site2.xyz/api/v1/client/subscribe?token=797c887179aba7f77b8d6b5fa2673ef6&list=true"
@@ -125,6 +117,8 @@ proxy-groups:
       - JP
       - US
       - UK
+    use:
+      - All
   - name: NETFLIX
     icon: "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Netflix.png"
     type: select
@@ -170,7 +164,7 @@ proxy-groups:
     interval: 600
     tolerance: 100
     use:
-      - Auto
+      - All
   - name: YouTube Auto
     icon: "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/YouTube.png"
     type: url-test
@@ -178,7 +172,7 @@ proxy-groups:
     interval: 86400
     tolerance: 100
     use:
-      - Auto
+      - All
   #region--------------------------------------------------
   - name: HK
     icon: "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Hong_Kong.png"
