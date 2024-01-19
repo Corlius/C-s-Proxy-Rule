@@ -346,6 +346,7 @@ rules:
 #以下为自定义规则
 - DOMAIN-SUFFIX,claude.ai,AIGC
 - DOMAIN-SUFFIX,bard.google.com,AIGC
+- DOMAIN-SUFFIX,generativelanguage.googleapis.com,AIGC
 - DOMAIN-SUFFIX,cdn.oaistatic.com,AIGC
 #以下为自定义规则组
 - RULE-SET,CsDirect,DIRECT
