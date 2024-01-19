@@ -13,3 +13,5 @@ payload:
   #Github
   - DOMAIN-SUFFIX,githubusercontent.com
   - DOMAIN-SUFFIX,formulae.brew.sh
+  #xgCloud
+  - DOMAIN-SUFFIX,xgcloud.org
