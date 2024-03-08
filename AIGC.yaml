@@ -1,0 +1,11 @@
+# NAME: AIGC
+# AUTHOR: Corlius
+payload:
+  - DOMAIN-SUFFIX,gemini.google.com,AIGC
+  - DOMAIN-SUFFIX,generativelanguage.googleapis.com,AIGC
+  - DOMAIN-SUFFIX,cdn.oaistatic.com,AIGC
+  - DOMAIN-SUFFIX,anthropic.com,AIGC
+  - DOMAIN-SUFFIX,claude.ai,AIGC
+  - DOMAIN-SUFFIX,bingapis.com,AIGC
+  - DOMAIN-SUFFIX,coze.com,AIGC
+  - DOMAIN-SUFFIX,ciciai.com,AIGC
