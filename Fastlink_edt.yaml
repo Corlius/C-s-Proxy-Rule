@@ -316,11 +316,14 @@ rule-providers:
     interval: 86400
 #--------------------------------------------------
 rules:
+#以下为自定义规则
+- DOMAIN-SUFFIX,ciciai.com,TW
+- DOMAIN-SUFFIX,appstorrent.ru,PROXY
 #以下为自定义规则组
 - RULE-SET,CsDirect,DIRECT
 - RULE-SET,CsProxy,PROXY
 - RULE-SET,CsAIGC,AIGC
-#以下为规则组
+#以下订阅规则组
 - RULE-SET,DIRECT,DIRECT
 - RULE-SET,OpenAI,AIGC
 - RULE-SET,Bing,Bing

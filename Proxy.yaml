@@ -5,7 +5,6 @@ payload:
   - DOMAIN-SUFFIX,baozimh.com
   - DOMAIN-SUFFIX,webmota.com
   #appstorrent
-  - DOMAIN-SUFFIX,appstorrent.ru
   - DOMAIN-SUFFIX,vk.com
   - DOMAIN-SUFFIX,userapi.com
   #iMazing
