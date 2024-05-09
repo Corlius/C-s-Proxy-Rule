@@ -15,4 +15,5 @@ DOMAIN-SUFFIX,formulae.brew.sh
 #xgCloud
 DOMAIN-SUFFIX,xgcloud.org
 #TMDB
+DOMAIN-SUFFIX,tmdb.org
 DOMAIN-SUFFIX,themoviedb.org

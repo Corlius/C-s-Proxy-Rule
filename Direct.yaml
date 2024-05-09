@@ -16,10 +16,6 @@ payload:
   - IP-CIDR,43.156.222.210/32
   - IP-CIDR,43.156.222.216/32
   - IP-CIDR,203.205.224.19/32
-  #InFuse
-  - DOMAIN-SUFFIX,infuse.im
-  - DOMAIN-SUFFIX,tmdb.org
-  - DOMAIN-SUFFIX,themoviedb.org
   #VPS
   - DOMAIN-SUFFIX,vps.corlius.top
   - IP-CIDR,142.171.77.219/32
