@@ -16,8 +16,8 @@ payload:
   - IP-CIDR,43.156.222.210/32
   - IP-CIDR,43.156.222.216/32
   - IP-CIDR,203.205.224.19/32
-  #VPS
-  - DOMAIN-SUFFIX,vps.corlius.top
+  #corlius.top
+  - DOMAIN-SUFFIX,corlius.top
   - IP-CIDR,142.171.77.219/32
   #FireFox
   - DOMAIN-SUFFIX,addons.mozilla.org
