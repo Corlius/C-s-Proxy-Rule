@@ -11,13 +11,13 @@ DOMAIN-SUFFIX,ouo.io
 DOMAIN-SUFFIX,craft.do
 DOMAIN-SUFFIX,subhd.tv
 DOMAIN-SUFFIX,speech.platform.bing.com
-#WeChat
+# WeChat
 IP-CIDR,43.156.222.154/32
 IP-CIDR,43.156.222.210/32
 IP-CIDR,43.156.222.216/32
 IP-CIDR,203.205.224.19/32
-#corlius.top
+# corlius.top
 DOMAIN-SUFFIX,corlius.top
 IP-CIDR,107.173.140.101/32
-#FireFox
+# FireFox
 DOMAIN-SUFFIX,addons.mozilla.org

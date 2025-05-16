@@ -1,21 +1,23 @@
 # NAME: Proxy
 # AUTHOR: Corlius
 payload:
-  #包子漫画
+  # 包子漫画
   - DOMAIN-SUFFIX,baozimh.com
   - DOMAIN-SUFFIX,webmota.com
-  #appstorrent
+  # appstorrent
   - DOMAIN-SUFFIX,vk.com
   - DOMAIN-SUFFIX,userapi.com
-  #iMazing
+  # iMazing
   - DOMAIN-SUFFIX,imazing.com
-  #Github
+  # Github
   - DOMAIN-SUFFIX,githubusercontent.com
   - DOMAIN-SUFFIX,formulae.brew.sh
-  #xgCloud
+  # xgCloud
   - DOMAIN-SUFFIX,xgcloud.org
-  #TMDB
+  # TMDB
   - DOMAIN-SUFFIX,tmdb.org
   - DOMAIN-SUFFIX,themoviedb.org
-  #Groq
+  # Groq
   - DOMAIN-SUFFIX,groq.com
+  # Screen Studio
+  - DOMAIN-SUFFIX,screen.studio
